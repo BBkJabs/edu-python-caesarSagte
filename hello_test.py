@@ -6,7 +6,7 @@ def test_hello():
     printText.main() 
     captured = capsys.readouterr()
 
-    expected_output = "Hello\nWorld!"
+    expected_output = 'Caesar sagte: "Veni, vidi, vici."'
     actual_output = captured.out
 
     # Schleife über alle Zeilen in actual_output; dabie werden in jeder Zeile führende und nachfolgende Leerzeichen entfernt
