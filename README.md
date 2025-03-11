@@ -2,18 +2,13 @@
 
 ## Python Grundlagen
 
-### Python ist eine Skriptsprache
-Python ist eine Skriptsprache. Das bedeutet, dass ihr Quellcode direkt ausgeführt werden kann, sofern ein Python Interpreter installiert ist.
+### Ausgabe mit einfachen Anführungszeichen
+Mit dem Befehl *print( ... )* kann Text ausgegeben werden. Text kann dabei aber nicht nur in Hochkomma (") sondern alternativ auch einfachen Hochkomma (') angegeben werden.
 
-### Ausgaben
-Mit dem Befehl *print( ... )* kann Text ausgegeben werden. Text muss dabei in Hochkomma (") angegeben werden.
-
-### Einrückungen
-Einrückungen in Pytgon sind **NICHT** optional. Über die Einrückung werden Blöcke festgelegt und ersetzen so die geschweiften Klammern in anderen Programmiersprachen.
-
-### Kommentare in Python
-Über ein Hashtag wird ein Kommentar eingeleitet. Kommentare sind nur für den Menschen gedacht. Der Python Interpreter ignoriert alle Kommentare.  
-Kommentare werden verwendet, um den Quellcode zu dokumentieren
+### Ausgabe von Anführungszeichen
+Die Ausgabe in einfachen oder doppelten Anführungszeichen (' oder ") hat den Vorteil, dass dadurch Anführungszeichen im Text ausgegeben werden können. Beispiel:  
+`print('Einstein sagte: "Gott würfelt nicht."')`  
+Dies führt zur Ausgabe: *Einstein sagte: "Gott würfelt nicht."*
 
 ## Aufgabe
-Ändere das Python Skript in der Datei *hello.py*, so dass bei Ausführung der Text *Hello World!* ausgegeben wird. Ändere **NICHT** die anderen Dateien
+Ändere das Python Skript in der Datei *hello.py*, so dass bei Ausführung der Text *Caesar sagte: "veni, vidi, vici."** ausgegeben wird. Ändere **NICHT** die anderen Dateien
