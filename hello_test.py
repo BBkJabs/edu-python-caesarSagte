@@ -1,17 +1,13 @@
 import hello;
 import io;
+import pytest;
 
-def test_hello():
-    #monkeypatch.setattr('sys.stdin', io.StringIO('3 2 1 nn bb aa'))
+def test_hello(capsys):
     hello.main() 
     captured = capsys.readouterr()
-
     expected_output = 'Caesar sagte: "Veni, vidi, vici."'
-    actual_output = captured.out
+    expected_output = expected_output.replace('\r\n', '\n').strip()
+    output = '\n'.join(line.strip() for line in captured.out.splitlines()).replace('\r\n', '\n').strip()
 
-    # Schleife über alle Zeilen in actual_output; dabie werden in jeder Zeile führende und nachfolgende Leerzeichen entfernt
-    actual_output = '\n'.join(line.strip() for line in actual_output.splitlines())
-    
-    # Normalize line endings and remove trailing spaces at line endings
-    assert actual_output.replace('\r\n', '\n').strip() == expected_output.replace('\r\n', '\n').strip()
+    assert  output == expected_output
  
