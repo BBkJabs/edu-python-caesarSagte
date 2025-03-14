@@ -11,6 +11,6 @@ Die Ausgabe in einfachen oder doppelten Anführungszeichen (' oder ") hat den Vo
 Dies führt zur Ausgabe: *Einstein sagte: "Gott würfelt nicht."*
 
 ## Aufgabe
-Ändere das Python Skript in der Datei *hello.py*, so dass bei Ausführung der Text *Caesar sagte: "veni, vidi, vici."* inlusive der Anführungszeichen ausgegeben wird.  
+Ändere das Python Skript in der Datei *caesarSagte.py*, so dass bei Ausführung der Text *Caesar sagte: "veni, vidi, vici."* inlusive der Anführungszeichen ausgegeben wird.  
 
 **WICHTIG:** Ändere **NICHT** die anderen Dateien
